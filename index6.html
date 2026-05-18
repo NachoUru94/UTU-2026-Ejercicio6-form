@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form id="userForm">
+        <input type="text" id="nombreNuevo" placeholder="Nombre completo" required />
+
+        <input type="email" id="emailNuevo" placeholder="Email" required />
+
+        <input type="password" id="password" placeholder="Password" required />
+
+        <select id="rol" required>
+            <option value="">Seleccionar rol</option>
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+        </select>
+
+        <button type="submit" id="BtnAddUser"> <!--Agrego id btnAddUser para identificar el boton en js -->
+            Crear usuario
+        </button>
+    </form>
+
+    <div id="resultado"></div>
+
+
+
+
+</body>
+<script src="scrip/array-usuarios.js"></script>
+
+</html>
