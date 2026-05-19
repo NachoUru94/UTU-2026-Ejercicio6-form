@@ -2,29 +2,37 @@
 <html>
 
 <head>
-
+    <link rel="stylesheet" href="style/style6.css">
+    <title>Formulario</title>
 </head>
 
 <body>
-    <form id="userForm">
-        <input type="text" id="nombreNuevo" placeholder="Nombre completo" required />
 
-        <input type="email" id="emailNuevo" placeholder="Email" required />
 
-        <input type="password" id="password" placeholder="Password" required />
+    <diV class="contenedor-registro">
+        <h1>Crea tu usuario</h1>
 
-        <select id="rol" required>
-            <option value="">Seleccionar rol</option>
-            <option value="admin">Admin</option>
-            <option value="user">User</option>
-        </select>
+        <form id="userForm">
+            <input class="input" type="text" id="nombreNuevo" placeholder="Nombre completo" required />
 
-        <button type="submit" id="BtnAddUser"> <!--Agrego id btnAddUser para identificar el boton en js -->
-            Crear usuario
-        </button>
-    </form>
+            <input class="input" type="email" id="emailNuevo" placeholder="Email" required />
 
-    <div id="resultado"></div>
+            <input class="input" type="password" id="password" placeholder="Password" required />
+
+            <select id="rol" required>
+                <option value="">Seleccionar rol</option>
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+            </select>
+
+            <button type="submit" id="BtnAddUser"> <!--Agrego id btnAddUser para identificar el boton en js -->
+                Crear usuario
+            </button>
+        </form>
+        <div id="resultado"></div>
+    </diV>
+
+
 
 
 
